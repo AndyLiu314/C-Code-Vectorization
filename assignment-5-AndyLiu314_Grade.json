@@ -1,0 +1,23 @@
+{
+  "relu": {
+    "mark": 10,
+    "comment": "Program ran and output matched"
+  },
+  "reluext": {
+    "mark": 10,
+    "comment": "Program ran and output matched"
+  },
+  "caxpy": {
+    "mark": 10,
+    "comment": "Program ran and output matched"
+  },
+  "soa": {
+    "mark": 10,
+    "comment": "Program ran and output matched"
+  },
+  "imax": {
+    "mark": 20,
+    "comment": "Program ran and output matched"
+  },
+  "userid": "GithubID:assignment-5-AndyLiu314"
+}

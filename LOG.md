@@ -1,0 +1,795 @@
+## ********************FAILED********************
+
+****************************************
+## ********************SUCCESS********************
+#### *****make Relu.bin*****
+ ```g++ -I./common -I./SoA -I./Relu -I./ReluEXT -I./Caxpy -I./Imax -DPREALLOCATE=1 -ggdb -ffast-math -fno-common -fno-builtin-printf -Wall -o Relu.bin ./Relu/main.cpp ./common/intrin.cpp ./common/logger.cpp -lm  
+
+```
+#### *****timeout 60 ./Relu.bin -l*****
+ ```
+[1;31mRELU [0m  
+[1;31mRelu Serial [0m  
+Results matched with answer!
+Passed!!!
+[1;31mRelu Vector [0m  
+Results matched with answer!
+***************** Printing Vector Unit Execution Log *****************
+ Instruction | Vector Lane Occupancy ('*' for active, '_' for inactive)
+------------- --------------------------------------------------------
+        vset | ********
+       vload | ********
+         vlt | ********
+      vstore | *_***_*_
+     masknot | ********
+      vstore | _*___*_*
+       vload | ********
+         vlt | ********
+      vstore | _*_*_**_
+     masknot | ********
+      vstore | *_*_*__*
+       vload | ********
+         vlt | ********
+      vstore | _*_*_**_
+     masknot | ********
+      vstore | *_*_*__*
+       vload | ********
+         vlt | ********
+      vstore | __*__*__
+     masknot | ********
+      vstore | **_**_**
+       vload | ********
+         vlt | ********
+      vstore | *___***_
+     masknot | ********
+      vstore | _***___*
+       vload | ********
+         vlt | ********
+      vstore | __**____
+     masknot | ********
+      vstore | **__****
+       vload | ********
+         vlt | ********
+      vstore | *_**_**_
+     masknot | ********
+      vstore | _*__*__*
+       vload | ********
+         vlt | ********
+      vstore | *__**_**
+     masknot | ********
+      vstore | _**__*__
+       vload | ********
+         vlt | ********
+      vstore | ___*****
+     masknot | ********
+      vstore | ***_____
+       vload | ********
+         vlt | ********
+      vstore | _____***
+     masknot | ********
+      vstore | *****___
+       vload | ********
+         vlt | ********
+      vstore | *______*
+     masknot | ********
+      vstore | _******_
+       vload | ********
+         vlt | ********
+      vstore | _*______
+     masknot | ********
+      vstore | *_******
+       vload | ********
+         vlt | ********
+      vstore | ****__**
+     masknot | ********
+      vstore | ____**__
+       vload | ********
+         vlt | ********
+      vstore | *_*___*_
+     masknot | ********
+      vstore | _*_***_*
+       vload | ********
+         vlt | ********
+      vstore | *_*__*_*
+     masknot | ********
+      vstore | _*_**_*_
+       vload | ********
+         vlt | ********
+      vstore | _***_*__
+     masknot | ********
+      vstore | *___*_**
+       vload | ********
+         vlt | ********
+      vstore | _***__**
+     masknot | ********
+      vstore | *___**__
+       vload | ********
+         vlt | ********
+      vstore | __*_***_
+     masknot | ********
+      vstore | **_*___*
+       vload | ********
+         vlt | ********
+      vstore | _**_***_
+     masknot | ********
+      vstore | *__*___*
+       vload | ********
+         vlt | ********
+      vstore | ________
+     masknot | ********
+      vstore | ********
+       vload | ********
+         vlt | ********
+      vstore | ***__**_
+     masknot | ********
+      vstore | ___**__*
+       vload | ********
+         vlt | ********
+      vstore | __**_***
+     masknot | ********
+      vstore | **__*___
+       vload | ********
+         vlt | ********
+      vstore | ___***__
+     masknot | ********
+      vstore | ***___**
+       vload | ********
+         vlt | ********
+      vstore | _*_*****
+     masknot | ********
+      vstore | *_*_____
+       vload | ********
+         vlt | ********
+      vstore | ____****
+     masknot | ********
+      vstore | ****____
+       vload | ********
+         vlt | ********
+      vstore | **_*_*__
+     masknot | ********
+      vstore | __*_*_**
+       vload | ********
+         vlt | ********
+      vstore | _***__**
+     masknot | ********
+      vstore | *___**__
+       vload | ********
+         vlt | ********
+      vstore | _**_*_**
+     masknot | ********
+      vstore | *__*_*__
+       vload | ********
+         vlt | ********
+      vstore | _*_***__
+     masknot | ********
+      vstore | *_*___**
+       vload | ********
+         vlt | ********
+      vstore | __*__**_
+     masknot | ********
+      vstore | **_**__*
+       vload | ********
+         vlt | ********
+      vstore | _**_____
+     masknot | ********
+      vstore | *__*****
+       vload | ********
+         vlt | ********
+      vstore | ______**
+     masknot | ********
+      vstore | ******__
+****************** Printing Vector Unit Statistics *******************
+Vector Width:              8
+Total Vector Instructions: 161
+Vector Utilization:        80.124224%
+Utilized Vector Lanes:     1032
+Total Vector Lanes:        1288
+Passed!!!
+
+```
+#### *****make ReluEXT.bin*****
+ ```g++ -I./common -I./SoA -I./Relu -I./ReluEXT -I./Caxpy -I./Imax -DPREALLOCATE=1 -ggdb -ffast-math -fno-common -fno-builtin-printf -Wall -o ReluEXT.bin ./ReluEXT/main.cpp ./common/intrin.cpp ./common/logger.cpp -lm  
+
+```
+#### *****timeout 60 ./ReluEXT.bin -l*****
+ ```
+[1;31mRELU [0m  
+[1;31mRelu Serial [0m  
+Results matched with answer!
+Passed!!!
+[1;31mRelu Vector [0m  
+Results matched with answer!
+***************** Printing Vector Unit Execution Log *****************
+ Instruction | Vector Lane Occupancy ('*' for active, '_' for inactive)
+------------- --------------------------------------------------------
+        vset | ********
+       vload | ********
+         vlt | ********
+     maskand | ********
+      vstore | _*_*___*
+     masknot | ********
+     maskand | ********
+      vstore | *_*_***_
+       vload | ********
+         vlt | ********
+     maskand | ********
+      vstore | *___**__
+     masknot | ********
+     maskand | ********
+      vstore | _***__**
+       vload | ********
+         vlt | ********
+     maskand | ********
+      vstore | *_*__**_
+     masknot | ********
+     maskand | ********
+      vstore | _*_**__*
+       vload | ********
+         vlt | ********
+     maskand | ********
+      vstore | *_******
+     masknot | ********
+     maskand | ********
+      vstore | _*______
+       vload | ********
+         vlt | ********
+     maskand | ********
+      vstore | __***_*_
+     masknot | ********
+     maskand | ********
+      vstore | **___*_*
+       vload | ********
+         vlt | ********
+     maskand | ********
+      vstore | _*_*___*
+     masknot | ********
+     maskand | ********
+      vstore | *_*_***_
+       vload | ********
+         vlt | ********
+     maskand | ********
+      vstore | _*__***_
+     masknot | ********
+     maskand | ********
+      vstore | *_**___*
+       vload | ********
+         vlt | ********
+     maskand | ********
+      vstore | *__*****
+     masknot | ********
+     maskand | ********
+      vstore | _**_____
+       vload | ********
+         vlt | ********
+     maskand | ********
+      vstore | **__**_*
+     masknot | ********
+     maskand | ********
+      vstore | __**__*_
+       vload | ********
+         vlt | ********
+     maskand | ********
+      vstore | ***_*___
+     masknot | ********
+     maskand | ********
+      vstore | ___*_***
+       vload | ********
+         vlt | ********
+     maskand | ********
+      vstore | **_**__*
+     masknot | ********
+     maskand | ********
+      vstore | __*__**_
+       vload | ********
+         vlt | ********
+     maskand | ********
+      vstore | _***__*_
+     masknot | ********
+     maskand | ********
+      vstore | *___**_*
+       vload | ****____
+         vlt | ****____
+     maskand | ********
+      vstore | ________
+     masknot | ********
+     maskand | ********
+      vstore | ****____
+****************** Printing Vector Unit Statistics *******************
+Vector Width:              8
+Total Vector Instructions: 92
+Vector Utilization:        84.239130%
+Utilized Vector Lanes:     620
+Total Vector Lanes:        736
+Passed!!!
+
+```
+#### *****make Caxpy.bin*****
+ ```g++ -I./common -I./SoA -I./Relu -I./ReluEXT -I./Caxpy -I./Imax -DPREALLOCATE=1 -ggdb -ffast-math -fno-common -fno-builtin-printf -Wall -o Caxpy.bin ./Caxpy/main.cpp ./common/intrin.cpp ./common/logger.cpp -lm  
+
+```
+#### *****timeout 60 ./Caxpy.bin -l*****
+ ```
+[1;31mCAXPY Serial [0m  
+Results matched with answer!
+Passed!!!
+***************** Printing Vector Unit Execution Log *****************
+ Instruction | Vector Lane Occupancy ('*' for active, '_' for inactive)
+------------- --------------------------------------------------------
+        vset | ********
+        vset | ********
+       vload | ********
+       vload | ********
+       vload | ********
+         veq | ********
+        vset | ********
+       vmult | __*_**__
+        vadd | __*_**__
+     maskand | ********
+      vstore | __*_**__
+       vload | ********
+       vload | ********
+       vload | ********
+         veq | ********
+        vset | ********
+       vmult | **_____*
+        vadd | **_____*
+     maskand | ********
+      vstore | **_____*
+       vload | ********
+       vload | ********
+       vload | ********
+         veq | ********
+        vset | ********
+       vmult | ___**_**
+        vadd | ___**_**
+     maskand | ********
+      vstore | ___**_**
+       vload | ********
+       vload | ********
+       vload | ********
+         veq | ********
+        vset | ********
+       vmult | _**_*___
+        vadd | _**_*___
+     maskand | ********
+      vstore | _**_*___
+       vload | ********
+       vload | ********
+       vload | ********
+         veq | ********
+        vset | ********
+       vmult | _*__*___
+        vadd | _*__*___
+     maskand | ********
+      vstore | _*__*___
+       vload | ********
+       vload | ********
+       vload | ********
+         veq | ********
+        vset | ********
+       vmult | *_*__*__
+        vadd | *_*__*__
+     maskand | ********
+      vstore | *_*__*__
+       vload | ********
+       vload | ********
+       vload | ********
+         veq | ********
+        vset | ********
+       vmult | **__*_*_
+        vadd | **__*_*_
+     maskand | ********
+      vstore | **__*_*_
+       vload | ********
+       vload | ********
+       vload | ********
+         veq | ********
+        vset | ********
+       vmult | _**_**_*
+        vadd | _**_**_*
+     maskand | ********
+      vstore | _**_**_*
+       vload | ********
+       vload | ********
+       vload | ********
+         veq | ********
+        vset | ********
+       vmult | **__***_
+        vadd | **__***_
+     maskand | ********
+      vstore | **__***_
+       vload | ********
+       vload | ********
+       vload | ********
+         veq | ********
+        vset | ********
+       vmult | *______*
+        vadd | *______*
+     maskand | ********
+      vstore | *______*
+       vload | ********
+       vload | ********
+       vload | ********
+         veq | ********
+        vset | ********
+       vmult | __*____*
+        vadd | __*____*
+     maskand | ********
+      vstore | __*____*
+       vload | ********
+       vload | ********
+       vload | ********
+         veq | ********
+        vset | ********
+       vmult | ****_*_*
+        vadd | ****_*_*
+     maskand | ********
+      vstore | ****_*_*
+       vload | ****____
+       vload | ****____
+       vload | ****____
+         veq | ****____
+        vset | ********
+       vmult | *_*__*_*
+        vadd | *_*__*_*
+     maskand | ********
+      vstore | *_*_____
+****************** Printing Vector Unit Statistics *******************
+Vector Width:              8
+Total Vector Instructions: 119
+Vector Utilization:        79.831933%
+Utilized Vector Lanes:     760
+Total Vector Lanes:        952
+[1;31mCAXPY Vector [0m  
+Results matched with answer!
+Passed!!!
+
+```
+#### *****make SoA.bin*****
+ ```g++ -I./common -I./SoA -I./Relu -I./ReluEXT -I./Caxpy -I./Imax -DPREALLOCATE=1 -ggdb -ffast-math -fno-common -fno-builtin-printf -Wall -o SoA.bin ./SoA/main.cpp ./common/intrin.cpp ./common/logger.cpp -lm  
+
+```
+#### *****timeout 60 ./SoA.bin -l*****
+ ```
+[1;31mARRAY SUM[0m (bonus) 
+***************** Printing Vector Unit Execution Log *****************
+ Instruction | Vector Lane Occupancy ('*' for active, '_' for inactive)
+------------- --------------------------------------------------------
+        vset | ********
+       vload | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vadd | ********
+       vload | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vadd | ********
+       vload | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vadd | ********
+       vload | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vadd | ********
+       vload | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vadd | ********
+       vload | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vadd | ********
+       vload | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vadd | ********
+       vload | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vadd | ********
+       vload | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vadd | ********
+       vload | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vadd | ********
+       vload | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vadd | ********
+       vload | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vset | ********
+       vmove | ********
+        vadd | ********
+      vstore | ********
+****************** Printing Vector Unit Statistics *******************
+Vector Width:              8
+Total Vector Instructions: 98
+Vector Utilization:        100.000000%
+Utilized Vector Lanes:     784
+Total Vector Lanes:        784
+Passed!!!
+
+```
+#### *****make Imax.bin*****
+ ```g++ -I./common -I./SoA -I./Relu -I./ReluEXT -I./Caxpy -I./Imax -DPREALLOCATE=1 -ggdb -ffast-math -fno-common -fno-builtin-printf -Wall -o Imax.bin ./Imax/main.cpp ./common/intrin.cpp ./common/logger.cpp -lm  
+
+```
+#### *****timeout 60 ./Imax.bin -l*****
+ ```
+[1;31mIMAX [0m  
+[1;31mIMAX Serial [0m  
+Results matched with answer!
+Passed!!!
+[1;31mIMAX Vector [0m  
+Results matched with answer!
+***************** Printing Vector Unit Execution Log *****************
+ Instruction | Vector Lane Occupancy ('*' for active, '_' for inactive)
+------------- --------------------------------------------------------
+        vset | ********
+        vset | ********
+       vload | ********
+         vgt | ********
+     cntbits | ********
+        vset | ********
+        vset | ********
+     cntbits | ********
+     cntbits | ********
+         vgt | ********
+     cntbits | ********
+        vset | ********
+        vset | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+     cntbits | ********
+        vset | ********
+        vset | ********
+     cntbits | ********
+     cntbits | ********
+         vgt | ********
+     cntbits | ********
+        vset | ********
+        vset | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+     cntbits | ********
+        vset | ********
+        vset | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+       vload | ********
+         vgt | ********
+   firstbits | ********
+     cntbits | ********
+     cntbits | ********
+     cntbits | ********
+      vstore | *_______
+****************** Printing Vector Unit Statistics *******************
+Vector Width:              8
+Total Vector Instructions: 207
+Vector Utilization:        99.577295%
+Utilized Vector Lanes:     1649
+Total Vector Lanes:        1656
+Passed!!!
+
+```
